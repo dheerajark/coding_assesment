@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+html,
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  margin: 0 45px;
+  
+}
+
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.cart-icon img {
+  width: 30px;
+}
+
+/* Background Section */
+.bg_1 {
+  position: relative; /* Set position to relative for positioning children */
+  overflow: hidden; /* Hide overflow to prevent blurred content from showing */
+  height: 300px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  color: black; /* Set text color to black */
+}
+
+.bg_1::before {
+  content: ''; /* Necessary for the pseudo-element */
+  position: absolute; /* Position it absolutely within .bg_1 */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('images/backgnd.jpg');
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  filter: blur(8px); /* Adjust the blur value as needed */
+  z-index: 1; /* Place it behind the text and logo */
+}
+
+.bg_1 h3 {
+  position: relative; /* Position the text above the overlay */
+  z-index: 2; /* Ensure the text is above the blur effect */
+  color: black; /* Set text color to black for the heading */
+  margin-top: 10px; /* Space between logo and heading */
+}
+
+.bg_1 img {
+  position: relative; /* Position the image above the overlay */
+  z-index: 2; /* Ensure the image is above the blur effect */
+  width: 77px; /* Adjust width as needed */
+  height: 77px; /* Adjust height as needed */
+  opacity: 1; /* Ensure the image is fully visible */
+}
+
+
+
+.bg_1 h3 {
+  font-size: 48px;
+  margin: 0;
+}
+
+/* Main Cart Container */
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.group144 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 817px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.group55 ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 100px;
+  background-color: #f8f0e5;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.group55 li {
+  flex: 1;
+  text-align: center;
+}
+
+.cart-list {
+  margin-top: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-image {
+  width: 100px;
+  border-radius: 8px;
+}
+
+.cart-item-details h3 {
+  font-size: 16px;
+  margin: 0;
+
+}
+
+.cart-item-details{
+  display: flex;
+  width: 573px;
+height: 25px;
+top: 638px;
+left: 242px;
+gap: 0px;
+opacity: 0px;
+flex-direction: column;
+
+}
+
+.price, .item-total {
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+}
+
+.quantity {
+  width: 50px;
+  text-align: center;
+}
+
+.remove-item {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-item img {
+  width: 20px;
+}
+
+.cart-item img{
+  width: 105px;
+height: 105px;
+top: 598px;
+left: 100px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+
+
+/* Cart Totals */
+.cart-totals {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 393px;
+height: 390px;
+top: 488px;
+left: 947px;
+gap: 0px;
+opacity: 0px;
+background: #F9F1E7;
+}
+
+.cart-totals h1 {
+  margin-bottom: 20px;
+
+  
+  gap: 0px;
+  opacity: 0px;
+
+  text-align: center;
+
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+
+
+
+
+}
+
+.cart-totals p {
+
+  margin: 10px 0;
+
+  display: flex;
+  width: 69px;
+  height: 24px;
+  top: 612px;
+  left: 1022px;
+  gap: 0px;
+  opacity: 0px;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+
+}
+
+#subtotal{
+  width: 112px;
+height: 24px;
+top: 612px;
+left: 1153px;
+gap: 0px;
+opacity: 0px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+
+}
+
+#total{
+  width: 112px;
+height: 24px;
+top: 612px;
+left: 1153px;
+gap: 0px;
+opacity: 0px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+}
+
+
+
+#checkout-btn {
+  width: 222px;
+  height: 58.95px;
+  border-radius: 10px; /* Rounded corners */
+  background: #eedecc;
+  border: none; /* Remove borders */
+  color: black; /* White text */
+  font-size: 18px; /* Increase font size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Show hand icon on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+#checkout-btn:hover {
+  background: #eedecc; /* Reverse gradient on hover */
+  transform: translateY(-3px); /* Button lifts up slightly */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Active button effect */
+#checkout-btn:active {
+  transform: translateY(1px); /* Button presses down slightly */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Reduced shadow on click */
+}
+
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  background: #FAF3EA; /* Set your background color */
+  padding: 50px 0; /* Adjust the top and bottom padding */
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-between; /* Distributes space between items */
+  width: 100%; /* Makes the footer icons span the entire width */
+  max-width: 1200px; /* Set a max width for proper centering */
+}
+
+.footer-icons div {
+  display: flex;
+  align-items: center; /* Aligns icons and text vertically */
+  font-size: 18px; /* Adjust font size */
+  color: #333; /* Set text color */
+}
+
+.footer-icons img {
+  width: 30px;
+  margin-right: 10px; /* Adds space between the icon and text */
+}
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Marmeto Cart Page</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/meubel_logo.png" alt="Marmeto Logo">
+            <span class="brand-name">Marmeto</span>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <img src="path-to-cart-icon.png" alt="Cart">
+        </div>
+    </header>
+
+    <!-- Background Section -->
+    <section class="bg_1">
+        <!-- Background image will be set via CSS -->
+        <img src="/images/main_logo.png" alt="Marmeto logo">
+        <h3>Cart</h3>
+        
+    </section>
+
+    <!-- Cart Content -->
+    <main class="cart-container">
+        <section class="cart-container">
+            <div class="group144">
+                <div class="group55">
+                    <ul>
+                        <li>Product</li>
+                        <li>Price</li>
+                        <li>Quantity</li>
+                        <li>Subtotal</li>
+                    </ul>
+                </div>
+                <div class="cart-list" id="cart-list">
+                    <!-- Cart items will be dynamically added here by script.js -->
+                    <div class="cart-item">
+                        <img src="images/asgaard-sofa.png" alt="Asgaard Sofa" class="product-image">
+                        <div class="cart-item-details">
+                            <h3>Asgaard Sofa</h3>
+                        </div>
+                        <p class="price">Rs. 250,000.00</p>
+                        <input type="number" value="1" class="quantity">
+                        <p class="item-total">Rs. 250,000.00</p>
+                        <button class="remove-item">
+                            <img src="images/trash-icon.png" alt="Remove Item">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            
+    
+        <!-- Cart Totals -->
+        <section class="cart-totals">
+            <h1>Cart Totals</h1>
+            <div class="totals-detail">
+                <p class="subtotal-text">Subtotal: <span class="amount">₹<span id="subtotal">250,000.00</span></span></p>
+                <p class="total-text">Total: <span class="amount total-amount">₹<span id="total">250,000.00</span></span></p>
+            </div>
+            <button id="checkout-btn" class="checkout-btn">Check Out</button>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-icons">
+            <div><img src="path-to-quality-icon.png" alt="High Quality"> High Quality</div>
+            <div><img src="path-to-warranty-icon.png" alt="Warranty Protection"> Warranty Protection</div>
+            <div><img src="path-to-shipping-icon.png" alt="Free Shipping"> Free Shipping</div>
+            <div><img src="path-to-support-icon.png" alt="24/7 Support"> 24/7 Support</div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
